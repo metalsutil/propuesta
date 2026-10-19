@@ -272,6 +272,39 @@ footer .wrap{font-family:var(--font-mono);font-size:.72rem;color:var(--fg-dim);d
   .stop{opacity:0;transform:translateY(12px);transition:opacity .6s ease, transform .6s ease}
   .stop.is-seen{opacity:1;transform:none}
 }
+   /* bloque de video */
+.video-frame{
+  position:relative;
+  width:100%;
+  padding-top:56.25%;
+  border-radius:14px;
+  overflow:hidden;
+  border:1px solid var(--border-soft);
+  background:#000;
+  margin-top:1.4rem;
+}
+.video-frame iframe,
+.video-frame video{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+  display:block;
+}
+.video-frame .video-placeholder{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--fg-dim);
+  font-family:var(--font-mono);
+  font-size:.78rem;
+  letter-spacing:.03em;
+  text-align:center;
+  padding:0 1.5rem;
+}
 </style>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;0,700;0,800;0,900;1,500&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
@@ -543,7 +576,11 @@ footer .wrap{font-family:var(--font-mono);font-size:.72rem;color:var(--fg-dim);d
 </section>
 
 </div>
-
+   
+<div class="video-frame">
+  <iframe src="https://drive.google.com/file/d/ESTE-ES-EL-ID-DEL-ARCHIVO/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe>
+</div>
+   
 <div class="band closing">
   <div class="wrap">
     <p class="quote">"Proponemos transformar el recorrido cotidiano por el Metro en un recorrido artístico interactivo: una red de nodos sensibles donde las obras, las estaciones y los usuarios se conectan mediante juego, palabras, sonido, sensores, realidad aumentada e inteligencia artificial. No buscamos solamente informar sobre las obras; buscamos que las personas las descubran, las relacionen, las transformen y construyan su propio recorrido."</p>
