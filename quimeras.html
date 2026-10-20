@@ -299,6 +299,15 @@ footer .wrap{font-family:var(--font-mono);font-size:.72rem;color:var(--fg-dim);d
   text-align:center;
   padding:0 1.5rem;
 }
+  .video-frame.full-bleed{
+  width:100vw;
+  position:relative;
+  left:50%;
+  right:50%;
+  margin-left:-50vw;
+  margin-right:-50vw;
+  border-radius:0;
+}
 </style>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;0,700;0,800;0,900;1,500&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
@@ -514,9 +523,9 @@ footer .wrap{font-family:var(--font-mono);font-size:.72rem;color:var(--fg-dim);d
     <div class="eyebrow"><span class="num">09</span><span>VIDEO</span></div>
     <h2 class="title">Recorrido en video</h2>
     <div class="wrap" style="padding:0">
-      <div class="video-frame">
-        <iframe src="https://drive.google.com/file/d/1c4KZn4ebhzek8nLjZRPQhjq690uSXnui/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe>
-      </div>
+<div class="video-frame full-bleed">
+  <iframe src="https://drive.google.com/file/d/1c4KZn4ebhzek8nLjZRPQhjq690uSXnui/preview" allow="autoplay" allowfullscreen loading="lazy"></iframe>
+</div>
     </div>
   </div>
 </section>
